@@ -1,0 +1,54 @@
+#
+# Advanced Test for Dynamic Memory Allocator
+#
+
+dataseg 0x3000000
+heap nextfit
+
+mode correctness
+
+log ds 2
+log mm 2
+
+start
+v
+# Initial allocations
+m 1 20
+
+m 2 30
+
+m 3 40
+
+m 4 50
+
+m 5 60
+v
+
+# Allocate after reallocation
+m 6 25
+m 7 35
+
+m 8 1000
+
+m 9 2000
+
+m 10 30000
+
+f 5
+
+f 6
+
+f 7
+
+v
+
+f 8
+
+f 9
+
+f 10
+
+v
+
+stop
+stat

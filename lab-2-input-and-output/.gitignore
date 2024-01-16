@@ -1,0 +1,8 @@
+dirtree
+obj/*
+.deps/*
+doc/html/*
+test?/*
+demo/*
+myoutput.txt
+refoutput.txt

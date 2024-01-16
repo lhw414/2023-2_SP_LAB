@@ -1,0 +1,9 @@
+./sdriver.pl -s ../reference/csapsh -a "-p" -t ../traces/trace15.txt
+#
+# trace15.txt - Tests whether the shell can handle SIGTSTP and SIGINT
+#     signals that come from other processes instead of the terminal.
+#
+csapsh> ./mystop 2 
+csapsh> jobs
+[1] (-1) { -1 } Stopped ./mystop 2
+csapsh> ./myint 2 

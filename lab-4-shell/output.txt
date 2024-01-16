@@ -1,0 +1,11 @@
+mystop.c
+mystop
+mysplit.c
+mysplit
+myspin.c
+myspin
+myprod.c
+myprod
+myout.txt
+myint.c
+myint

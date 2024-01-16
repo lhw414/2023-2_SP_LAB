@@ -1,0 +1,6 @@
+mm_test
+obj
+.deps
+doc/html
+*.swp
+mm_driver

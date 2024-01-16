@@ -1,0 +1,46 @@
+#
+# trace14.txt - Putting it all together
+#
+
+/bin/echo "csapsh> ./bogus"
+./bogus
+
+/bin/echo "csapsh> ./myspin 10"
+./myspin 10
+
+SLEEP 2
+INT
+
+/bin/echo -e "csapsh> ./myspin 3 \046"
+./myspin 3 &
+
+/bin/echo -e "csapsh> ./myspin 4 \046"
+./myspin 4 &
+
+/bin/echo "csapsh> jobs"
+jobs
+
+/bin/echo "csapsh> fg %6"
+fg %6
+
+SLEEP 2
+TSTP
+
+/bin/echo "csapsh> jobs"
+jobs
+
+/bin/echo "csapsh> bg %77"
+bg %77
+
+/bin/echo "csapsh> bg %6"
+bg %6
+
+/bin/echo "csapsh> jobs"
+jobs
+
+/bin/echo "csapsh> fg %6"
+fg %6
+
+/bin/echo "csapsh> quit"
+quit
+
